@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+config.env
+*.pkl
+*.joblib
+node_modules/
+venv/
