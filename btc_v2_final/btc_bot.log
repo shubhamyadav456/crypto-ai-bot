@@ -55,3 +55,13 @@
 2026-04-13 16:50:23,167  INFO  Tech=SELL(MEDIUM) prob=0.328 regime=Downtrend | News=NEUTRAL(0.0) | Alert=True Q=B
 2026-04-13 16:50:24,422  INFO  Signal sent! SELL quality=B
 2026-04-13 16:50:24,423  INFO  Scheduler running — every 30 min
+2026-04-13 16:59:18,560  INFO  BTC AI Bot v4.3 starting...
+2026-04-13 16:59:18,560  INFO    Symbol   : BTCUSDT
+2026-04-13 16:59:18,560  INFO    Interval : 30 min
+2026-04-13 16:59:18,560  INFO    Model    : E:\Python programs\btc_v2_fixed\btc_v2_final\models/saved/model_v4.pkl
+2026-04-13 16:59:18,560  INFO    News     : CryptoPanic (API key set)
+2026-04-13 16:59:20,020  INFO  Model loaded | AUC=0.5291 | threshold=0.391 | version=v4_20260413_1648
+2026-04-13 16:59:20,020  INFO  Getting prediction...
+2026-04-13 16:59:24,673  INFO  Tech=SELL(MEDIUM) prob=0.328 regime=Downtrend | News=NEUTRAL(0.0) | Alert=True Q=B
+2026-04-13 16:59:25,845  INFO  Signal sent! SELL quality=B
+2026-04-13 16:59:25,846  INFO  Scheduler running — every 30 min
