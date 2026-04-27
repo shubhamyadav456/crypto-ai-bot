@@ -7,39 +7,47 @@ _ENV  = os.path.join(_ROOT, "config.env")
 if os.path.exists(_ENV):
     load_dotenv(_ENV)
 
-# ── Trading ─────────────────────────────────────────────────────
+# ── Trading ────────────────────────────────────────────────────
 SYMBOL        = os.getenv("SYMBOL",    "BTCUSDT")
 BASE_TF       = os.getenv("BASE_TF",   "1h")
 
-# ── Model ────────────────────────────────────────────────────────
-HORIZON       = int(os.getenv("HORIZON",        "3"))
-THRESHOLD_PCT = float(os.getenv("THRESHOLD_PCT", "0.002"))
-MIN_PROB_BUY  = float(os.getenv("MIN_PROB_BUY",  "0.52"))
-MAX_PROB_SELL = float(os.getenv("MAX_PROB_SELL",  "0.48"))
+# ── Model ──────────────────────────────────────────────────────
+HORIZON       = int(os.getenv("HORIZON",       "6"))
+THRESHOLD_PCT = float(os.getenv("THRESHOLD_PCT", "0.003"))
+MIN_PROB_BUY  = float(os.getenv("MIN_PROB_BUY",  "0.60"))
+MAX_PROB_SELL = float(os.getenv("MAX_PROB_SELL", "0.40"))
 
 _mp = os.getenv("MODEL_PATH", "models/saved/model_v4.pkl")
 MODEL_PATH = _mp if os.path.isabs(_mp) else os.path.join(_ROOT, _mp)
 
-# ── Risk ─────────────────────────────────────────────────────────
+# ── Risk ───────────────────────────────────────────────────────
 ATR_SL_MULT = float(os.getenv("ATR_SL_MULT", "1.5"))
 ATR_TP_MULT = float(os.getenv("ATR_TP_MULT", "2.5"))
 MIN_RR      = float(os.getenv("MIN_RR",      "1.5"))
-RISK_PCT    = float(os.getenv("RISK_PCT",    "0.01"))
+RISK_PCT    = float(os.getenv("RISK_PCT",    "0.01"))   # 1% per trade
 
-# ── API ──────────────────────────────────────────────────────────
+# ── API ────────────────────────────────────────────────────────
 API_HOST = os.getenv("API_HOST", "0.0.0.0")
 API_PORT = int(os.getenv("API_PORT", "8000"))
-API_URL  = os.getenv("API_URL", f"http://localhost:{int(os.getenv('API_PORT', '8000'))}")
+API_URL  = os.getenv("API_URL",  f"http://localhost:{int(os.getenv('API_PORT','8000'))}")
 
-# ── Telegram ─────────────────────────────────────────────────────
+# ── Telegram ───────────────────────────────────────────────────
 TELEGRAM_TOKEN   = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID",   "")
-CHECK_INTERVAL   = int(os.getenv("CHECK_INTERVAL",  "30"))
+CHECK_INTERVAL   = int(os.getenv("CHECK_INTERVAL",  "60"))
 
-# ── Binance ──────────────────────────────────────────────────────
+# ── Binance ────────────────────────────────────────────────────
 BINANCE_SPOT    = "https://api.binance.com/api/v3"
 BINANCE_FUTURES = "https://fapi.binance.com/fapi/v1"
 
-# ── Storage ──────────────────────────────────────────────────────
+# ── Storage ────────────────────────────────────────────────────
 _db = os.getenv("DB_PATH", "storage/trades.db")
 DB_PATH = _db if os.path.isabs(_db) else os.path.join(_ROOT, _db)
+
+# ── AI Agents ──────────────────────────────────────────────────
+ANTHROPIC_API_KEY  = os.getenv("ANTHROPIC_API_KEY", "")
+MIN_DEBATE_SCORE   = int(os.getenv("MIN_DEBATE_SCORE",   "7"))
+MIN_SIGNAL_SCORE   = int(os.getenv("MIN_SIGNAL_SCORE",   "4"))
+MAX_TRADES_PER_DAY = int(os.getenv("MAX_TRADES_PER_DAY", "2"))
+USE_DEBATE_PANEL   = os.getenv("USE_DEBATE_PANEL", "true").lower() == "true"
+USE_NARRATIVE      = os.getenv("USE_NARRATIVE",    "true").lower() == "true"

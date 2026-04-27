@@ -87,3 +87,57 @@
 2026-04-15 13:41:01,483  INFO  BUY prob=0.720 score=3/7 passed=False regime=Uptrend rsi=43
 2026-04-15 13:41:01,484  INFO  Score 3/4 required — filtered
 2026-04-15 13:41:01,485  INFO  Scheduler: every 30 min
+2026-04-21 20:11:48,146  INFO  BTC AI Bot v4.4 — High Confidence Strategy
+2026-04-21 20:11:48,146  INFO    Prob filter : BUY>=0.52 | SELL<=0.48
+2026-04-21 20:11:48,147  INFO    Score filter: >=4/7
+2026-04-21 20:11:48,147  INFO    Max trades  : 2/day
+2026-04-21 20:11:48,147  INFO    SL/TP       : 1.5x / 2.5x ATR
+2026-04-21 20:11:56,685  INFO  Model loaded | AUC=0.5289 | threshold=0.5 | version=v4_20260414_2009
+2026-04-21 20:11:56,685  INFO  Getting prediction...
+2026-04-21 20:12:03,345  INFO  BUY prob=0.720 score=6/7 passed=True regime=Uptrend rsi=58
+2026-04-21 20:12:04,650  INFO  Signal sent! BUY score=6/7 trades_today=1
+2026-04-21 20:12:04,651  INFO  Scheduler: every 30 min
+2026-04-24 11:42:52,272  INFO  BTC AI Bot v4.4 — High Confidence Strategy
+2026-04-24 11:42:52,274  INFO    Prob filter : BUY>=0.52 | SELL<=0.48
+2026-04-24 11:42:52,274  INFO    Score filter: >=4/7
+2026-04-24 11:42:52,274  INFO    Max trades  : 2/day
+2026-04-24 11:42:52,275  INFO    SL/TP       : 1.5x / 2.5x ATR
+2026-04-24 11:42:58,002  INFO  Model loaded | AUC=0.5289 | threshold=0.5 | version=v4_20260414_2009
+2026-04-24 11:42:58,002  INFO  Getting prediction...
+2026-04-24 11:43:04,433  INFO  BUY prob=0.852 score=5/7 passed=True regime=Uptrend rsi=49
+2026-04-24 11:43:07,096  INFO  Signal sent! BUY score=5/7 trades_today=1
+2026-04-24 11:43:07,098  INFO  Scheduler: every 30 min
+2026-04-24 11:49:03,374  WARNING  Poll error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8725927006:AAEAdkWxz05bDFP1VGfTHb9OqCAgRdSp_qM/getUpdates (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002781BAC1BD0>: Failed to resolve 'api.telegram.org' ([Errno 11001] getaddrinfo failed)"))
+2026-04-24 12:15:33,380  INFO  BTC AI Bot v4.4 — High Confidence Strategy
+2026-04-24 12:15:33,381  INFO    Prob filter : BUY>=0.52 | SELL<=0.48
+2026-04-24 12:15:33,381  INFO    Score filter: >=4/7
+2026-04-24 12:15:33,381  INFO    Max trades  : 2/day
+2026-04-24 12:15:33,381  INFO    SL/TP       : 1.5x / 2.5x ATR
+2026-04-24 12:15:35,956  INFO  Model loaded | AUC=0.5289 | threshold=0.5 | version=v4_20260414_2009
+2026-04-24 12:15:35,956  INFO  Getting prediction...
+2026-04-24 12:15:40,925  INFO  BUY prob=0.852 score=5/7 passed=True regime=Uptrend rsi=47
+2026-04-24 12:15:42,433  INFO  Signal sent! BUY score=5/7 trades_today=1
+2026-04-24 12:15:42,433  INFO  Scheduler: every 30 min
+2026-04-25 17:52:33,126  INFO  BTC AI Bot v4.4 — High Confidence Strategy
+2026-04-25 17:52:33,127  INFO    Prob filter : BUY>=0.52 | SELL<=0.48
+2026-04-25 17:52:33,127  INFO    Score filter: >=4/7
+2026-04-25 17:52:33,128  INFO    Max trades  : 2/day
+2026-04-25 17:52:33,128  INFO    SL/TP       : 1.5x / 2.5x ATR
+2026-04-25 17:52:35,752  INFO  Model loaded | AUC=0.5289 | threshold=0.5 | version=v4_20260414_2009
+2026-04-25 17:52:35,752  INFO  Getting prediction...
+2026-04-25 17:52:40,419  INFO  SELL prob=0.000 score=4/7 passed=True regime=Uptrend rsi=50
+2026-04-25 17:52:41,816  INFO  Signal sent! SELL score=4/7 trades_today=1
+2026-04-25 17:52:41,817  INFO  Scheduler: every 30 min
+2026-04-26 18:57:27,927  INFO  BTC AI Bot v5.0 — Multi-AI Strategy
+2026-04-26 18:57:27,929  INFO    ML + Filter (4/7) + Debate (7/10) + Narrative
+2026-04-26 18:57:27,930  INFO    Debate Panel : ACTIVE
+2026-04-26 18:57:27,931  INFO    Narrative    : ACTIVE
+2026-04-26 18:57:27,931  INFO    Shadow Trader: ACTIVE (paper trades always running)
+2026-04-26 18:57:27,932  INFO    Check every  : 30 min | Max 2/day
+2026-04-26 18:57:31,314  INFO  Model loaded | AUC=0.5463 | threshold=0.364 | version=v4_20260426_1856
+2026-04-26 18:57:31,315  INFO  ==================================================
+2026-04-26 18:57:31,315  INFO  Getting prediction...
+2026-04-26 18:57:37,203  INFO  ML: SELL prob=0.458 | Filter: 3/4 passed=False | Regime: Uptrend | News: NEUTRAL
+2026-04-26 18:57:37,203  INFO  Layer 2 failed: score 3/4
+2026-04-26 18:57:37,210  INFO  Scheduler running — checking every 30 min
+2026-04-26 19:04:30,778  INFO  [DEBATE] Skipped: Prob 0.46 too weak for debate
