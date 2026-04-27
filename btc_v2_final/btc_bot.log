@@ -141,3 +141,45 @@
 2026-04-26 18:57:37,203  INFO  Layer 2 failed: score 3/4
 2026-04-26 18:57:37,210  INFO  Scheduler running — checking every 30 min
 2026-04-26 19:04:30,778  INFO  [DEBATE] Skipped: Prob 0.46 too weak for debate
+2026-04-27 12:50:21,742  INFO  BTC AI Bot v5.0 — Multi-AI Strategy
+2026-04-27 12:50:21,743  INFO    ML + Filter (5/7) + Debate (7/10) + Narrative
+2026-04-27 12:50:21,743  INFO    Debate Panel : ACTIVE
+2026-04-27 12:50:21,743  INFO    Narrative    : ACTIVE
+2026-04-27 12:50:21,743  INFO    Shadow Trader: ACTIVE (paper trades always running)
+2026-04-27 12:50:21,743  INFO    Check every  : 30 min | Max 2/day
+2026-04-27 12:50:31,657  INFO  Model loaded | AUC=0.546 | threshold=0.441 | version=v4_20260427_1145
+2026-04-27 12:50:31,657  INFO  ==================================================
+2026-04-27 12:50:31,658  INFO  Getting prediction...
+2026-04-27 12:50:35,124  INFO    [NEWS] Invalid API key format — using free tier
+2026-04-27 12:50:36,107  WARNING    [NEWS] CryptoPanic HTTP error: 404 Client Error: Not Found for url: https://cryptopanic.com/api/free/v2/posts/?currencies=BTC&public=true&kind=news
+2026-04-27 12:50:36,110  INFO  ML: BUY prob=0.775 | Filter: 3/5 passed=False | Regime: Uptrend | News: NEUTRAL
+2026-04-27 12:50:36,110  INFO  Layer 2 failed: score 3/5
+2026-04-27 12:50:36,113  INFO  Scheduler running — checking every 30 min
+2026-04-27 12:51:39,896  WARNING  Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /fng/?limit=730&format=json
+2026-04-27 12:51:41,219  INFO  [DEBATE] Starting 4-agent debate — signal=BUY prob=0.78 score=3/7
+2026-04-27 12:51:41,220  INFO  [DEBATE] Bull agent...
+2026-04-27 12:51:42,709  ERROR  [DEBATE] Error: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages
+2026-04-27 12:53:50,774  INFO    [NEWS] Invalid API key format — using free tier
+2026-04-27 12:53:51,184  WARNING    [NEWS] CryptoPanic HTTP error: 404 Client Error: Not Found for url: https://cryptopanic.com/api/free/v2/posts/?currencies=BTC&public=true&kind=news
+2026-04-27 12:53:51,508  WARNING    [NEWS] CryptoPanic HTTP error: 404 Client Error: Not Found for url: https://cryptopanic.com/api/free/v2/posts/?currencies=BTC&public=true&kind=news
+2026-04-27 12:53:51,509  WARNING  [NARRATIVE] No headlines provided
+2026-04-27 13:05:53,484  INFO  BTC AI Bot v5.0 — Multi-AI Strategy
+2026-04-27 13:05:53,484  INFO    ML + Filter (5/7) + Debate (3/10) + Narrative
+2026-04-27 13:05:53,485  INFO    Debate Panel : ACTIVE
+2026-04-27 13:05:53,485  INFO    Narrative    : ACTIVE
+2026-04-27 13:05:53,485  INFO    Shadow Trader: ACTIVE (paper trades always running)
+2026-04-27 13:05:53,485  INFO    Check every  : 30 min | Max 2/day
+2026-04-27 13:05:57,137  INFO  Model loaded | AUC=0.546 | threshold=0.441 | version=v4_20260427_1145
+2026-04-27 13:05:57,137  INFO  ==================================================
+2026-04-27 13:05:57,138  INFO  Getting prediction...
+2026-04-27 13:06:00,923  INFO    [NEWS] Invalid API key format — using free tier
+2026-04-27 13:06:01,974  WARNING    [NEWS] CryptoPanic HTTP error: 404 Client Error: Not Found for url: https://cryptopanic.com/api/free/v2/posts/?currencies=BTC&public=true&kind=news
+2026-04-27 13:06:01,976  INFO  ML: BUY prob=0.775 | Filter: 3/5 passed=False | Regime: Uptrend | News: NEUTRAL
+2026-04-27 13:06:01,977  INFO  Layer 2 failed: score 3/5
+2026-04-27 13:06:01,978  INFO  Scheduler running — checking every 30 min
+2026-04-27 13:07:02,575  INFO  [DEBATE] Starting 4-agent debate — signal=BUY prob=0.78 score=3/7
+2026-04-27 13:07:02,576  INFO  [DEBATE] Bull agent...
+2026-04-27 13:07:03,316  ERROR  [DEBATE] Error: 401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages
+2026-04-27 13:07:06,596  INFO  [DEBATE] Starting 4-agent debate — signal=BUY prob=0.78 score=3/7
+2026-04-27 13:07:06,596  INFO  [DEBATE] Bull agent...
+2026-04-27 13:07:07,616  ERROR  [DEBATE] Error: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages
