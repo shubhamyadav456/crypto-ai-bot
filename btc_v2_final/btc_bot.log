@@ -183,3 +183,25 @@
 2026-04-27 13:07:06,596  INFO  [DEBATE] Starting 4-agent debate — signal=BUY prob=0.78 score=3/7
 2026-04-27 13:07:06,596  INFO  [DEBATE] Bull agent...
 2026-04-27 13:07:07,616  ERROR  [DEBATE] Error: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages
+2026-04-27 18:59:59,041  INFO  BTC AI Bot v5.0 — Multi-AI Strategy
+2026-04-27 18:59:59,041  INFO    ML + Filter (5/7) + Debate (3/10) + Narrative
+2026-04-27 18:59:59,042  INFO    Debate Panel : ACTIVE
+2026-04-27 18:59:59,042  INFO    Narrative    : ACTIVE
+2026-04-27 18:59:59,042  INFO    Shadow Trader: ACTIVE (paper trades always running)
+2026-04-27 18:59:59,042  INFO    Check every  : 30 min | Max 2/day
+2026-04-27 19:00:08,465  INFO  Model loaded | AUC=0.546 | threshold=0.441 | version=v4_20260427_1145
+2026-04-27 19:00:08,465  INFO  ==================================================
+2026-04-27 19:00:08,466  INFO  Getting prediction...
+2026-04-27 19:00:12,440  INFO    [NEWS] Invalid API key format — using free tier
+2026-04-27 19:00:13,676  WARNING    [NEWS] CryptoPanic HTTP error: 404 Client Error: Not Found for url: https://cryptopanic.com/api/free/v2/posts/?currencies=BTC&public=true&kind=news
+2026-04-27 19:00:13,677  INFO  ML: SELL prob=0.441 | Filter: 3/5 passed=False | Regime: Uptrend | News: NEUTRAL
+2026-04-27 19:00:13,678  INFO  Layer 2 failed: score 3/5
+2026-04-27 19:00:13,680  INFO  Scheduler running — checking every 30 min
+2026-04-27 19:01:21,663  INFO  [DEBATE] Skipped: Prob 0.44 too weak for debate
+2026-04-27 19:11:16,235  INFO  [DEBATE] Skipped: Prob 0.44 too weak for debate
+2026-04-27 19:31:06,940  INFO  ==================================================
+2026-04-27 19:31:06,950  INFO  Getting prediction...
+2026-04-27 19:31:10,294  INFO    [NEWS] Invalid API key format — using free tier
+2026-04-27 19:31:11,429  WARNING    [NEWS] CryptoPanic HTTP error: 404 Client Error: Not Found for url: https://cryptopanic.com/api/free/v2/posts/?currencies=BTC&public=true&kind=news
+2026-04-27 19:31:11,432  INFO  ML: SELL prob=0.250 | Filter: 3/5 passed=False | Regime: Uptrend | News: NEUTRAL
+2026-04-27 19:31:11,432  INFO  Layer 2 failed: score 3/5
