@@ -1,4 +1,4 @@
-# ai/narrative_engine.py — Market Narrative Engine v1.0
+
 """
 Claude analyzes current market narrative — what story is driving price.
 Narrative often moves BEFORE price. This gives early directional bias.
